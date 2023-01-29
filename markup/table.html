@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        background: 0;
+        table-layout: fixed;
+        border: 1.7px solid #000;
+      }
+      th,
+      tr,
+      td {
+        width: 200px;
+        height: 40px;
+        border: 2px solid#000;
+        font-size: 1.1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Table</h1>
+      <hr />
+    </header>
+    <main>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th
+                style="background-color: blue"
+                colspan="3"
+                style="font-weight: lighter"
+              >
+                MY FISRT TABLE
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="background-color: blue">Fisrt cell</td>
+              <td style="background-color: blue">Secon cell</td>
+              <td style="background-color: yellow" rowspan="3">
+                6 cells merget togeter
+              </td>
+            </tr>
+            <tr>
+              <td style="background-color: yellow" colspan="2">
+                2 cell merged into one
+              </td>
+            </tr>
+            <tr>
+              <td style="background-color: yellow">
+                1st cell <br />
+                3rd row
+              </td>
+              <td style="background-color: yellow">2nd cell <br />3rd row</td>
+            </tr>
+            <tr>
+              <td style="background-color: yellow" colspan="3">
+                Do you like tables?
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer> </footer>
+  </body>
+</html>
